@@ -3,16 +3,23 @@
     height: 100px;
     margin: 0px;
     border: 2px black solid;
+    background: #fdfefe;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 80px;
 }
 
+.column:hover, .column:focus {
+    outline: 5px solid limegreen;
+}
+
 .row {
     width: 400px;
-    margin: 0px auto;
+    margin: 10px auto;
     display: flex;
+    gap: 10px;
     justify-content: center;
 }
 
@@ -23,14 +30,67 @@
 
 #winner-display {
     display: none;
-    background-color: red;
-    color: white;
+    background-color: rgba(255, 215, 0, 0.05);
+    border: 5px solid goldenrod;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    width: 400px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    border-radius: 10px;
+    color: goldenrod;
+    font-size: 30px;
+}
+
+#winner-name {
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
 }
 
 body {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fdfefe;
+    background: #16161d;
 }
 
-#reset-button{
+#reset-button {
     margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(255, 60, 0);
+    color: white;
+    text-transform: uppercase;
+}
+
+#reset-button:hover, #reset-button:focus {
+    outline: 5px solid #F00;
+}
+
+#fireworks-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cpu-button {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    color: #16161d;
+    background: #ececec;
+    text-transform: uppercase;
+}
+
+.cpu-random {
+    background: yellow;
+}
+
+.cpu-optimal {
+    background: red;
 }
