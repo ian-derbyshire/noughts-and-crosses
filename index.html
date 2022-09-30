@@ -1,50 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Noughts & Crosses</title>
-  <meta content="text/html; charset=utf-8"
-        http-equiv="content-type">
-  <link href="main.css"
-        rel="stylesheet"
-        type="text/css">
+     <title>Noughts & Crosses</title>
+     <meta content="text/html; charset=utf-8" http-equiv="content-type">
+     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-  <h1>Noughts & Crosses</h1>
-  <p id="winner-display">The winner is <span id="winner-name"></span></p>
-  <div id="grid">
-    <div class="row"
-         id="row-0">
-      <div class="column"
-           id="row-0-column-0"></div>
-      <div class="column"
-           id="row-0-column-1"></div>
-      <div class="column"
-           id="row-0-column-2"></div>
-    </div>
-    <div class="row"
-         id="row-1">
-      <div class="column"
-           id="row-1-column-0"></div>
-      <div class="column"
-           id="row-1-column-1"></div>
-      <div class="column"
-           id="row-1-column-2"></div>
-    </div>
-    <div class="row"
-         id="row-2">
-      <div class="column"
-           id="row-2-column-0"></div>
-      <div class="column"
-           id="row-2-column-1"></div>
-      <div class="column"
-           id="row-2-column-2"></div>
-    </div>
-  </div>
-  <button id="reset-button">Reset</button>
-  <p>Remember to open your dev tools by pressing F12 to view log messages and errors!</p>
-  <script src="academy.js"
-        type="text/javascript"></script> 
-  <script src="connectors.js"
-        type="text/javascript"></script>
+     <h1>Noughts & Crosses</h1>
+     <p id="winner-display">The winner is <span id="winner-name"></span></p>
+     <div id="grid">
+          <div class="row" id="row-0">
+               <div class="column" id="row-0-column-0"></div>
+               <div class="column" id="row-0-column-1"></div>
+               <div class="column" id="row-0-column-2"></div>
+          </div>
+          <div class="row" id="row-1">
+               <div class="column" id="row-1-column-0"></div>
+               <div class="column" id="row-1-column-1"></div>
+               <div class="column" id="row-1-column-2"></div>
+          </div>
+          <div class="row" id="row-2">
+               <div class="column" id="row-2-column-0"></div>
+               <div class="column" id="row-2-column-1"></div>
+               <div class="column" id="row-2-column-2"></div>
+          </div>
+     </div>
+     <button id="reset-button">Reset</button>
+     <div class="user-story">
+          <h2>User story 1</h2>
+          <p>As two players of noughts & crosses, we are able to place either a nought or cross on the 3x3 grid by
+               clicking on the desired square
+          </p>
+          <ol>
+               <li>Clicking a square will place either a nought or cross
+               </li>
+               <li>Item (nought or cross) placed will alternate each turn
+               </li>
+               <li>No more than nine turns can be played
+               </li>
+               <li>A square may only be played once
+               </li>
+               <li>Noughts should go first
+               </li>
+          </ol>
+     </div>
+     <div class="user-story">
+          <h2>User story 2</h2>
+          <p>As two players of noughts & crosses, if I click reset, the board is cleared, such that the game can start again</p>
+          <ol>
+               <li>Winner message should be cleared</li>
+               <li>Noughts should go first</li>
+               <li>After reset games should continue to meet acceptance criteria of user story 1</li>
+          </ol>
+     </div>
+     <div class="user-story">
+          <h2>User story 3</h2>
+          <p>As two players of noughts & crosses, if either places three noughts or crosses in a line, they are declared the winner</p>
+          <ol>
+               <li>A winner can be declared if a line fills any row</li>
+               <li>A winner can be declared if a line fills any column</li>
+               <li>A winner can be declared if a line fills any diagonal</li>
+               <li>If all squares are used and no lines are achieved, then nobody is declared the winner</li>
+               <li>If a winner is declared, then no further nought or cross can be placed until the board is reset as per user story 2</li>
+          </ol>
+     </div>
+     <div class="user-story">
+          <h2>Stretch goals</h2>
+          <ul>
+               <li style="color: red">Add player names and declare the victor</li>
+               <li>Reset the game for another round</li>
+               <li>Source control - use a Github repo for your mini project</li>
+          </ul>
+     </div>
+     <div class="user-story">
+          <h2>Bonus goals</h2>
+          <ul>
+               <li>Have a computer player that plays randomly</li>
+               <li>Have a computer player that plays optimally</li>
+          </ul>
+     </div>
+     <script src="academy.js" type="text/javascript"></script>
+     <script src="connectors.js" type="text/javascript"></script>
 </body>
+
 </html>

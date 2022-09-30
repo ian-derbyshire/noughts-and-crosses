@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .column {
     width: 100px;
     height: 100px;
@@ -93,4 +98,19 @@ body {
 
 .cpu-optimal {
     background: red;
+}
+
+.user-story {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+    background:rgba(255, 215, 0, 0.05);
+    border-radius: 20px;
+}
+
+.user-story ul, .user-story ol {
+    padding: 20px;
+    list-style-position: inside;
+    color: greenyellow;
 }
